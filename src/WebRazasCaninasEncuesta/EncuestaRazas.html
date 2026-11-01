@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Razas Caninas</title>
+</head>
+<body>
+
+    <h1 style="text-align:center"> Razas Caninas</h1>
+    <a href="#">Volver</a>
+    <h2>Nueva raza de perros</h2>
+    <hr>
+
+    <!--el form action method es la mamera de decir en donde se guardaran los datos-->
+    <form action="#" method="post">
+
+        <p>
+            <label for="raza"><strong>Raza</strong></label><br>
+            <input type="text" id="raza" name="raza" placeholder="Ej. Doberman miniatura">
+        </p>
+
+        <p>
+            <label for="peso"><strong>Peso aprox.</strong></label><br>
+            <input type="text" id="peso" name="peso" placeholder="Ej. 10kgs">
+        </p>
+
+        <p>
+            <label for="tiempo"><strong>Tiempo de vida aprox.</strong></label><br>
+            <input type="text" id="tiempo" name="tiempo" placeholder="Ej. 12 años aprox.">
+        </p>
+
+        <!-- botones de radio los de opcion única -->
+        <p><strong>Clasificación</strong></p>
+        <label><input type="radio" name="clasificación" value="Familiar"> Familiar</label>
+        <label><input type="radio" name="clasificación" value="Trabajo"> Trabajo</label>
+        <label><input type="radio" name="clasificación" value="Compañia"> Compañia</label>
+
+        <!-- es para el plegable -->
+
+        <p>
+            <label for="tamaño"><strong>Tamaño</strong></label><br>
+            <select id="tamaño" name="tamaño">
+                <option value="">Elegir</option>
+                <option value="pequeño">pequeño</option>
+                <option value="mediano">mediano</option>
+                <option value="grande">grande</option>
+            </select>
+        </p>
+
+        <!-- casillas de verficacion multiple -->
+        <p><strong>Padecimientos comunes</strong></p>
+        <label><input type="checkbox" name="padecimientos" value="glucoma"> Glaucoma</label>
+        <label><input type="checkbox" name="padecimientos" value="cataratas"> Cataratas</label>
+        <label><input type="checkbox" name="padecimientos" value="cadera"> Cadera</label>
+        <label><input type="checkbox" name="padecimientos" value="sobrepeso"> Sobrepeso</label>
+
+        <!-- boton de radio -->
+        <p><strong>Clima recomendado</strong></p>
+        <label><input type="radio" name="clima" value="frio"> Frio</label>
+        <label><input type="radio" name="clima" value="caluroso"> Caluroso</label>
+        <label><input type="radio" name="clima" value="templado"> Templado</label><br>
+
+        <p><strong>Tipo de pelo</strong></p>
+        <label><input type="radio" name="pelo" value="largo"> Largo</label>
+        <label><input type="radio" name="pelo" value="corto"> Corto</label>
+        <label><input type="radio" name="pelo" value="liso"> Liso</label>
+        <label><input type="radio" name="pelo" value="duro"> Duro</label>
+        <label><input type="radio" name="pelo" value="grueso"> Grueso</label><br>
+        <label><input type="radio" name="pelo" value="rizado"> Rizado</label>
+        <label><input type="radio" name="pelo" value="seco"> Seco</label>
+        <label><input type="radio" name="pelo" value="graso"> Graso</label>
+        <label><input type="radio" name="pelo" value="sin pelo"> Sin pelo</label>
+        <label><input type="radio" name="pelo" value="fino"> Fino</label><br>
+
+        <p><strong>Carácter</strong></p>
+        <label><input type="checkbox" name="carácter" value="activo"> Activo</label>
+        <label><input type="checkbox" name="carácter" value="cariñoso"> Cariñoso</label>
+        <label><input type="checkbox" name="carácter" value="timido"> Timido</label>
+        <label><input type="checkbox" name="carácter" value="pasivo"> Pasivo</label><br>
+        <label><input type="checkbox" name="carácter" value="inteligente"> Inteligente</label>
+        <label><input type="checkbox" name="carácter" value="equilibrado"> Equilibrado</label>
+        <label><input type="checkbox" name="carácter" value="dominante"> Dominante</label><br>
+        <label><input type="checkbox" name="carácter" value="muy fiel"> Muy fiel</label>
+        <label><input type="checkbox" name="carácter" value="dócil"> Dócil</label>
+        <label><input type="checkbox" name="carácter" value="fuerte"> Fuerte</label><br>
+        <label><input type="checkbox" name="carácter" value="sociable"> Sociable</label>
+        <label><input type="checkbox" name="carácter" value="pasivo"> pasivo</label>
+        <label><input type="checkbox" name="carácter" value="tranquilo"> tranquilo</label><br>
+
+        <p>
+            <label for="actividadfisica"><strong>Actividad fisica recomendada</strong></label><br>
+            <select id="actividadfisica" name="actividadfisica">
+                <option value="">Elegir</option>
+                <option value="baja"> Baja</option>
+                <option value="media"> Media</option>
+                <option value="alta"> Alta</option>
+            </select>
+        </p>
+
+        <p><strong>Ideal para</strong></p>
+        <label><input type="checkbox" name="ideal" value="casas"> Casas</label>
+        <label><input type="checkbox" name="ideal" value="pisos"> Pisos</label>
+        <label><input type="checkbox" name="ideal" value="pastoreo"> Pastoreo</label>
+        <label><input type="checkbox" name="ideal" value="personas con discapacidad"> Personas con discapacidad</label><br>
+        <label><input type="checkbox" name="ideal" value="niños"> Niños</label>
+        <label><input type="checkbox" name="ideal" value="vigilancia"> Vigilancia</label>
+        <label><input type="checkbox" name="ideal" value="personas mayores"> Personas mayores</label><br>
+        <label><input type="checkbox" name="ideal" value="senderismo"> Senderismo</label>
+        <label><input type="checkbox" name="ideal" value="deporte"> Deporte</label>
+        <label><input type="checkbox" name="ideal" value="personas alérgicas"> Personas alérgicas</label><br>
+        <label><input type="checkbox" name="ideal" value="departamento"> Departamento</label>
+        <label><input type="checkbox" name="ideal" value="caza"> Caza</label>
+        <label><input type="checkbox" name="ideal" value="terapia"> Terapia</label>
+
+        <p>
+            <label for="comentarios"><strong>Comentarios / recomendaciones</strong></label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+        </p>
+
+        <hr>
+
+        <!-- Botón de envío -->
+        <p>
+            <button type="submit">Guardar</button>
+        </p>
+
+    </form>
+
+    <a href="#">Volver</a>
+
+</body>
+</html>
