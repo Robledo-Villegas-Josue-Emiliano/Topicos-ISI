@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order</title>
+    <style>
+        body {
+            font-family: serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .po-table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .po-table td, .po-table th {
+            border: 3px solid #0000ff; /* Borde azul doble/grueso característico */
+            padding: 6px 10px;
+            vertical-align: top;
+            color: #000;
+        }
+
+        .header-po {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .header-date {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+
+        .section-title {
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<table class="po-table">
+    <tr>
+        <td colspan="2" class="header-po">Purchase order: 987654321</td>
+        <td colspan="2" class="header-date">Tutorialbrain - 10th Oct 2020</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" style="width: 50%;">
+            <span class="section-title">Vendor:</span><br>
+            ABC XYZ ltd.<br>
+            DUMMY STREET<br>
+            BUILDING 123<br>
+            HAZARIBAGH, JHARKHAND, 825301
+        </td>
+        <td colspan="2" style="width: 50%;">
+            <span class="section-title">SHIP TO:</span><br>
+            MS DHONI<br>
+            WILSON GARDEN<br>
+            SOUTHEAST BLOCK, RANCHI - 834001
+        </td>
+    </tr>
+
+    <tr class="bold">
+        <td style="width: 15%;">Qty.</td>
+        <td style="width: 35%;">Item Code.</td>
+        <td style="width: 25%;">Description</td>
+        <td style="width: 25%;">Unit Price</td>
+    </tr>
+
+    <tr>
+        <td>100</td>
+        <td>IABCDE</td>
+        <td>Pencils</td>
+        <td>20.00</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>IN877</td>
+        <td>Notebooks</td>
+        <td>100.00</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>IP8675</td>
+        <td>Pens</td>
+        <td>70.00</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="bold text-center">Subtotal</td>
+        <td>190.00</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="bold text-center">GST</td>
+        <td class="text-center">5%</td>
+        <td>9.50</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="bold text-center">Grand Total</td>
+        <td class="bold">$ 199.50</td>
+    </tr>
+</table>
+
+</body>
+</html>
