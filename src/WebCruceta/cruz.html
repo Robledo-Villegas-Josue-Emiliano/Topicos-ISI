@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- hacer circulo es con:
+Border-radius: 50% -->
+
+    <style>
+        .sizebox {
+            width: 100px;
+            height: 100px;
+        }
+
+        .colorAmarillo{
+            background-color: #FFDB58;
+        }
+
+        .colorAzul{
+            background-color: cadetblue;
+        }
+
+        .colorRojo {
+            background-color: #d22e2e;
+        }
+
+        .colorVerde {
+            background-color: forestgreen;
+        }
+
+        .lineaHorizontal {
+            width: 600px;
+            height: 50px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .lineaVertical {
+            width: 50px;
+            height: 600px;
+            position: absolute;
+            z-index: -1;
+        }
+
+       #cuadrado01_azul {
+           top: 20px;
+           left: 20px;
+           position: absolute;
+       }
+
+       #cuadrado02_amarillo {
+           top: 70px;
+           left: 70px;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #cuadrado03_rojo {
+           top: 120px;
+           left: 120px;
+           position: absolute;
+           z-index: -2;
+       }
+
+       #cuadrado04_verde {
+           top: 170px;
+           left: 170px;
+           position: absolute;
+           z-index: -3;
+       }
+
+       #lineaTop {
+           top: 20px;
+           left: 20px;
+       }
+
+       #lineaLeft {
+           top: 20px;
+           left: 20px;
+       }
+
+       #cuadrado05_azul {
+           top: 520px;
+           left: 20px;
+           position: absolute;
+       }
+
+       #cuadrado06_amarillo {
+           top: 470px;
+           left: 70px;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #cuadrado07_rojo {
+           top: 420px;
+           left: 120px;
+           position: absolute;
+           z-index: -2;
+       }
+
+       #cuadrado08_verde {
+           top: 370px;
+           left: 170px;
+           position: absolute;
+           z-index: -3;
+       }
+
+       #lineaDown {
+           top: 570px;
+           left: 20px;
+       }
+
+       #cuadrado09_azul {
+           top: 520px;
+           left: 520px;
+           position: absolute;
+       }
+
+       #cuadrado10_amarillo {
+           top: 470px;
+           left: 470px;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #cuadrado11_rojo {
+           top: 420px;
+           left: 420px;
+           position: absolute;
+           z-index: -2;
+       }
+
+       #cuadrado12_verde {
+           top: 370px;
+           left: 370px;
+           position: absolute;
+           z-index: -3;
+       }
+
+       #lineaRight {
+           top: 20px;
+           left: 570px;
+       }
+
+       #cuadrado13_azul {
+           top: 20px;
+           left: 520px;
+           position: absolute;
+       }
+
+       #cuadrado14_amarillo {
+           top: 70px;
+           left: 470px;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #cuadrado15_rojo {
+           top: 120px;
+           left: 420px;
+           position: absolute;
+           z-index: -2;
+       }
+
+       #cuadrado16_verde {
+           top: 170px;
+           left: 370px;
+           position: absolute;
+           z-index: -3;
+       }
+
+       #cuadradoMorado {
+           width: 200px;
+           height: 200px;
+           top: 220px;
+           left: 220px;
+           position: absolute;
+           z-index: -2;
+           background-color: rebeccapurple;
+       }
+
+       #circuloIzquierdo {
+           border-top-left-radius: 100px;
+           border-bottom-left-radius: 100px;
+           width: 100px;
+           height: 200px;
+           top: 220px;
+           left: 220px;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #circuloDerecho {
+           border-top-right-radius: 100px;
+           border-bottom-right-radius: 100px;
+           width: 100px;
+           height: 200px;
+           top: 220px;
+           left: 320px;
+           background-color: orange;
+           position: absolute;
+           z-index: -1;
+       }
+
+       #circuloAzul {
+           border-radius: 50%;
+           width: 100px;
+           height: 100px;
+           top: 270px;
+           left: 270px;
+           position: absolute;
+           z-index: 0;
+       }
+
+       #circuloBlanco {
+           border-radius: 50%;
+           width: 50px;
+           height: 50px;
+           top: 295px;
+           left: 295px;
+           position: absolute;
+           z-index: 1;
+           background-color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="cuadrado01_azul" class="sizebox colorAzul"></div>
+    <div id="cuadrado02_amarillo" class="sizebox colorAmarillo"></div>
+    <div id="cuadrado03_rojo" class="sizebox colorRojo"></div>
+    <div id="cuadrado04_verde" class="sizebox colorVerde"></div>
+
+    <div id="lineaTop" class="lineaHorizontal colorRojo"></div>
+    <div id="lineaLeft" class="lineaVertical colorVerde"></div>
+
+    <div id="cuadrado05_azul" class="sizebox colorAzul"></div>
+    <div id="cuadrado06_amarillo" class="sizebox colorAmarillo"></div>
+    <div id="cuadrado07_rojo" class="sizebox colorRojo"></div>
+    <div id="cuadrado08_verde" class="sizebox colorVerde"></div>
+
+    <div id="lineaDown" class="lineaHorizontal colorRojo"></div>
+
+    <div id="cuadrado09_azul" class="sizebox colorAzul"></div>
+    <div id="cuadrado10_amarillo" class="sizebox colorAmarillo"></div>
+    <div id="cuadrado11_rojo" class="sizebox colorRojo"></div>
+    <div id="cuadrado12_verde" class="sizebox colorVerde"></div>
+
+    <div id="lineaRight" class="lineaVertical colorVerde"></div>
+
+    <div id="cuadrado13_azul" class="sizebox colorAzul"></div>
+    <div id="cuadrado14_amarillo" class="sizebox colorAmarillo"></div>
+    <div id="cuadrado15_rojo" class="sizebox colorRojo"></div>
+    <div id="cuadrado16_verde" class="sizebox colorVerde"></div>
+
+    <div id="cuadradoMorado"></div>
+    <div id="circuloIzquierdo" class="colorAmarillo"></div>
+    <div id="circuloDerecho"></div>
+    <div id="circuloAzul" class="colorAzul"></div>
+    <div id="circuloBlanco"></div>
+
+</body>
+</html>
