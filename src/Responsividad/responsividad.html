@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            background-color: mediumblue;
+        }
+
+        .circleSize {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        #figura01 {
+            top: 50px;
+            left: 50px;
+            background-color: green;
+        }
+        #figura02 {
+            top: 50px;
+            left: 300px;
+            background-color: red;
+        }
+        #figura03 {
+            top: 50px;
+            left: 550px;
+            background-color: deeppink;
+        }
+        #figura04 {
+            top: 200px;
+            left: 50px;
+            background-color: yellow;
+        }
+        #figura05 {
+            top: 200px;
+            left: 300px;
+            background-color: cornflowerblue;
+        }
+        #figura06 {
+            top: 200px;
+            left: 550px;
+            background-color: hotpink;
+        }
+
+
+        @media only screen and (max-width: 1000px){
+            body {
+                background-color: #edb45e;
+            }
+
+            #figura01 {
+                background-color: red;
+                border-radius: 0;
+            }
+            #figura02 {
+                background-color: yellow;
+                border-radius: 0;
+            }
+            #figura03 {
+                background-color: cornflowerblue;
+                border-radius: 0;
+            }
+            #figura04 {
+                background-color: hotpink;
+                border-radius: 0;
+            }
+            #figura05 {
+                background-color: deeppink;
+                border-radius: 0;
+            }
+            #figura06 {
+                background-color: green;
+                border-radius: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="figura01" class="circleSize"></div>
+    <div id="figura02" class="circleSize"></div>
+    <div id="figura03" class="circleSize"></div>
+    <div id="figura04" class="circleSize"></div>
+    <div id="figura05" class="circleSize"></div>
+    <div id="figura06" class="circleSize"></div>
+
+</body>
+</html>
