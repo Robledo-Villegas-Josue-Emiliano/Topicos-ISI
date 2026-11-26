@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo Responsivo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+            padding: 24px 16px;
+        }
+        .catalog-container {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .product-card {
+            padding: 20px 18px 24px;
+            border-right: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #ffffff;
+        }
+        .product-card:nth-child(4n) {
+            border-right: none;
+        }
+        .product-card:nth-last-child(-n+4) {
+            border-bottom: none;
+        }
+        .image-box {
+            height: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .image-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        .title {
+            font-size: 12.5px;
+            line-height: 1.35;
+            color: #2b2b2b;
+            margin-bottom: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .price-row {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+        .price {
+            font-size: 14px;
+            font-weight: 700;
+            color: #111111;
+            line-height: 1.25;
+        }
+        .badge {
+            font-size: 13px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        .old-price {
+            font-size: 11.5px;
+            color: #888888;
+            text-decoration: line-through;
+            margin-bottom: 3px;
+        }
+        .shipping {
+            font-size: 11.5px;
+            color: #777777;
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+
+        .best-offer {
+            font-size: 11.5px;
+            color: #777777;
+            margin-bottom: 4px;
+        }
+
+        .stats {
+            font-size: 11.5px;
+            color: #d93829;
+            margin-top: 2px;
+        }
+
+        @media (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .product-card:nth-child(4n) {
+                border-right: 1px solid #e6e6e6;
+            }
+            .product-card:nth-child(3n) {
+                border-right: none;
+            }
+            .product-card:nth-last-child(-n+4) {
+                border-bottom: 1px solid #e6e6e6;
+            }
+            .product-card:nth-last-child(-n+2) {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .product-card:nth-child(3n) {
+                border-right: 1px solid #e6e6e6;
+            }
+            .product-card:nth-child(2n) {
+                border-right: none;
+            }
+            .product-card:nth-last-child(-n+2) {
+                border-bottom: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .product-card {
+                border-right: none !important;
+                border-bottom: 1px solid #e6e6e6 !important;
+            }
+            .product-card:last-child {
+                border-bottom: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<main class="catalog-container">
+    <section class="product-grid">
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="1pag.jpeg" alt="Micro ATX caja de la computadora" />
+                </div>
+                <h2 class="title">Micro ATX caja de la computadora, mini torre para...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $582.98</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $777.37</p>
+                <p class="shipping">MXN $844.24 por el envío</p>
+            </div>
+            <p class="stats">442 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="2pag.webp" alt="Rosewill Computadora para Juegos PC Caso" />
+                </div>
+                <h2 class="title">Rosewill Computadora para Juegos PC Caso, ATX Media...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $913.44</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $1 166.15</p>
+                <p class="shipping">MXN $1 192.00 por el envío</p>
+            </div>
+            <p class="stats">502 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="3pag.jpg" alt="LED LCD Monitor para videojuegos de Dell 23.6" />
+                </div>
+                <h2 class="title">LED LCD Monitor para videojuegos de Dell 23.6" - 16:9 ...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $2 177.17</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $3 770.97</p>
+                <p class="shipping">MXN $953.48 por el envío</p>
+            </div>
+            <p class="stats">3 131 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="4pag.jpeg" alt="ATX Media Torre Computadora Estuche de PC" />
+                </div>
+                <h2 class="title">ATX Media Torre Computadora Estuche de PC para juegos, Vid...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $1 166.15</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $1 554.92</p>
+                <p class="shipping">MXN $772.89 por el envío</p>
+            </div>
+            <p class="stats">494 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="5pag.avif" alt="Vivo Atx Mid Tower Computadora Pc Para Juegos" />
+                </div>
+                <h2 class="title">Vivo Atx Mid Tower Computadora Pc Para Juegos Funda Negro / ...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $777.37</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $1 010.53</p>
+                <p class="shipping">MXN $802.64 por el envío</p>
+                <p class="best-offer">o Mejor oferta</p>
+            </div>
+            <p class="stats">2 345 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="6pag.jpeg" alt="Juegos 750W 120MM Ventilador Silencioso ATX Fuente de poder" />
+                </div>
+                <h2 class="title">Juegos 750W 120MM Ventilador Silencioso ATX Fuente de...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $729.35</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $767.65</p>
+                <p class="shipping">MXN $777.37 por el envío</p>
+                <p class="best-offer">o Mejor oferta</p>
+            </div>
+            <p class="stats">7 153 vendidos</p>
+        </article>
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="7pag.jpeg" alt="Combo Placa Madre Amd Msi Asus Juegos Ryzen 3 3200G" />
+                </div>
+                <h2 class="title">Combo Placa Madre Amd Msi Asus Juegos ryzen 3 3200G o...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $1 009.86 a MXN $8 572.59</span>
+                </div>
+                <p class="shipping">MXN $368.17 por el envío</p>
+            </div>
+            <p class="stats">4 lo marcaron como favorito</p>
+        </article>
+
+
+        <article class="product-card">
+            <div>
+                <div class="image-box">
+                    <img src="8pag.jpeg" alt="Rosewill ATX Media Torre Para Juegos RGB Caja" />
+                </div>
+                <h2 class="title">Rosewill ATX Media Torre Para Juegos RGB Caja de la...</h2>
+                <div class="price-row">
+                    <span class="price">MXN $1 652.12</span>
+                    <span class="badge" title="Destacado">🏅</span>
+                </div>
+                <p class="old-price">Costaba: MXN $2 138.09</p>
+                <p class="shipping">MXN $1 292.50 por el envío</p>
+            </div>
+            <p class="stats">109 lo marcaron como favorito</p>
+        </article>
+    </section>
+</main>
+</body>
+</html>
